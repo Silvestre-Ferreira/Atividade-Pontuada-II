@@ -14,7 +14,7 @@ int main() {
 
     // Recebendo os nomes das disciplinas
     printf("Digite o nome das tres disciplinas:\n");
-    for (int i = 0; i < 3; i++) {
+    for (i = 0; i < 3; i++) {
         printf("Nome da disciplina %d: ", i + 1);
         scanf("%s", disciplinas[i]);
     }
@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    // Calculando as médias.
+    // Calculando as mÃ©dias.
     for (i = 0; i < 3; i++) {
         float soma_notas = 0;
         int soma_pesos = 0;
@@ -41,8 +41,8 @@ int main() {
         medias[i] = soma_notas / soma_pesos;
     }
 
-    // Exibindo as médias.
-    printf("\nMédias Ponderadas:\n");
+    // Exibindo as mÃ©dias.
+    printf("\nMÃ©dias Ponderadas:\n");
     for (i = 0; i < 3; i++) {
         printf("%s: %.2f\n", disciplinas[i], medias[i]);
     }
